@@ -1,0 +1,72 @@
+/* App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chart-checkbox-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 20px;
+}
+
+.chart-container {
+  width: 85%;
+  height: 400px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  border-color: inherit; /* Ensure the border matches the line color */
+}
+
+.checkbox-container input[type="checkbox"]:checked::before {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: inherit; /* Match the checkmark color to the line color */
+}
+
+
+
+
